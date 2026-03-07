@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envíos | ICON Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="LOGO.jpg" alt="ICON Store Logo">
+                <span class="sr-only">ICON Store</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="shop.html">Tienda</a></li>
+                <li><a href="offers.html">Ofertas</a></li>
+                <li><a href="shipping.html" class="active">Envíos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://wa.me/595983677778" target="_blank" class="icon-btn" aria-label="WhatsApp"><i
+                        data-lucide="message-circle"></i></a>
+                <button class="icon-btn cart-btn" id="cartToggle"><i data-lucide="shopping-bag"></i></button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <div class="hamburger"><span></span><span></span><span></span></div>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-links">
+            <a href="index.html">Inicio</a><a href="shop.html">Tienda</a><a href="offers.html">Ofertas</a><a
+                href="shipping.html" class="active">Envíos</a><a href="contact.html">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Información de <span class="text-silver">Envíos</span></h1>
+            <p class="page-desc">Conoce cómo llevamos la mejor tecnología desde CDE hasta tu puerta en todo Paraguay.
+            </p>
+        </div>
+    </header>
+
+    <!-- Shipping Info -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <div class="content-box">
+                <h2 class="filter-title" style="font-size: 1.5rem; margin-bottom: 1.5rem;"><i data-lucide="truck"
+                        style="vertical-align: middle; margin-right: 10px;"></i> Envíos Nacionales</h2>
+                <p style="color: var(--color-text-secondary); margin-bottom: 1rem; line-height: 1.8;">
+                    En ICON Store nos aseguramos de que tu compra llegue de forma rápida y segura a cualquier punto del
+                    territorio paraguayo. Trabajamos con las mejores empresas de logística del país para garantizar la
+                    integridad de tus productos.
+                </p>
+                <ul
+                    style="color: var(--color-text-secondary); margin-bottom: 2rem; padding-left: 1.5rem; list-style-type: disc;">
+                    <li style="margin-bottom: 0.5rem;"><strong>Asunción y Gran Asunción:</strong> Entrega en 24-48 horas
+                        hábiles.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Ciudades Principales (Encarnación, PJC, etc.):</strong>
+                        Entrega en 48-72 horas hábiles.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Interior del país:</strong> Entrega en 3 a 5 días hábiles
+                        dependiendo de la zona.</li>
+                </ul>
+
+                <h2 class="filter-title" style="font-size: 1.5rem; margin-bottom: 1.5rem;"><i data-lucide="shield-check"
+                        style="vertical-align: middle; margin-right: 10px;"></i> Seguro de Envío</h2>
+                <p style="color: var(--color-text-secondary); margin-bottom: 1rem; line-height: 1.8;">
+                    Todos nuestros envíos van asegurados por el 100% del valor del producto para tu total tranquilidad.
+                    Una vez despachado tu pedido, te proveeremos un número de rastreo (tracking) para que puedas seguir
+                    el estado de tu paquete en tiempo real.
+                </p>
+
+                <div style="margin-top: 3rem; text-align: center;">
+                    <a href="contact.html" class="btn btn-secondary">¿Tienes dudas? Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Light -->
+    <footer class="footer">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 ICON Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

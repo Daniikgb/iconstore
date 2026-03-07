@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas | ICON Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="LOGO.jpg" alt="ICON Store Logo">
+                <span class="sr-only">ICON Store</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="shop.html">Tienda</a></li>
+                <li><a href="offers.html" class="active">Ofertas</a></li>
+                <li><a href="shipping.html">Envíos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://wa.me/595983677778" target="_blank" class="icon-btn" aria-label="WhatsApp"><i
+                        data-lucide="message-circle"></i></a>
+                <button class="icon-btn search-btn" aria-label="Search"><i data-lucide="search"></i></button>
+                <div class="cart-container">
+                    <button class="icon-btn cart-btn" aria-label="Cart" id="cartToggle">
+                        <i data-lucide="shopping-bag"></i><span class="cart-badge">0</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Menu" id="mobileMenuBtn">
+                    <div class="hamburger"><span></span><span></span><span></span></div>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-links">
+            <a href="index.html">Inicio</a><a href="shop.html">Tienda</a><a href="offers.html"
+                class="active">Ofertas</a><a href="shipping.html">Envíos</a><a href="contact.html">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Ofertas <span class="text-silver">Especiales</span></h1>
+            <p class="page-desc">Descubre descuentos exclusivos en tecnología seleccionada por tiempo limitado.</p>
+        </div>
+    </header>
+
+    <!-- Offers Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="product-grid">
+                <!-- Promo Product -->
+                <div class="product-card group" style="border-color: var(--color-text-primary);">
+                    <div class="product-image-wrapper">
+                        <img src="catalogo/Screenshot 2026-03-07 193051.png" alt="AirPods Pro" class="product-image">
+                        <span class="product-badge badge-new"
+                            style="background-color: var(--color-text-primary); color: var(--color-bg-main);">-15%
+                            OFF</span>
+                        <div class="product-actions-hover">
+                            <button class="btn-icon add-to-cart-btn"><i data-lucide="shopping-bag"></i></button>
+                            <a href="product.html" class="btn-icon quick-view-btn"><i data-lucide="eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Accesorios</span>
+                        <h3 class="product-title"><a href="product.html">AirPods Pro (2da Generación)</a></h3>
+                        <div class="product-price">
+                            <span
+                                style="text-decoration: line-through; color: var(--color-border); font-size: 0.9em; margin-right: 0.5rem;">Precio
+                                Especial</span>
+                            <span>Consultar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Promo Product -->
+                <div class="product-card group">
+                    <div class="product-image-wrapper">
+                        <img src="catalogo/Screenshot 2026-03-07 193111.png" alt="MagSafe Case" class="product-image">
+                        <div class="product-actions-hover">
+                            <button class="btn-icon add-to-cart-btn"><i data-lucide="shopping-bag"></i></button>
+                            <a href="product.html" class="btn-icon quick-view-btn"><i data-lucide="eye"></i></a>
+                        </div>
+                        <span class="product-badge badge-new">-20% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cases</span>
+                        <h3 class="product-title"><a href="product.html">Funda MagSafe Clear Case</a></h3>
+                        <div class="product-price">Consultar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Light -->
+    <footer class="footer">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 ICON Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

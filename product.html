@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 15 Pro Max | ICON Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="LOGO.jpg" alt="ICON Store Logo">
+                <span class="sr-only">ICON Store</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="shop.html" class="active">Tienda</a></li>
+                <li><a href="offers.html">Ofertas</a></li>
+                <li><a href="shipping.html">Envíos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://wa.me/595983677778" target="_blank" class="icon-btn" aria-label="WhatsApp"><i
+                        data-lucide="message-circle"></i></a>
+                <button class="icon-btn cart-btn" id="cartToggle"><i data-lucide="shopping-bag"></i></button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <div class="hamburger"><span></span><span></span><span></span></div>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-links">
+            <a href="index.html">Inicio</a><a href="shop.html">Tienda</a><a href="offers.html">Ofertas</a><a
+                href="shipping.html">Envíos</a><a href="contact.html">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="section" style="padding-top: 120px;">
+        <div class="container">
+            <div class="product-detail-layout">
+                <!-- Gallery -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="catalogo/Screenshot 2026-03-07 193046.png" alt="iPhone 15 Pro Max">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <div class="thumbnail active"><img src="catalogo/Screenshot 2026-03-07 193046.png"
+                                alt="Thumb 1"></div>
+                        <div class="thumbnail"><img src="catalogo/Screenshot 2026-03-07 193058.png" alt="Thumb 2"></div>
+                        <div class="thumbnail"><img src="catalogo/Screenshot 2026-03-07 193104.png" alt="Thumb 3"></div>
+                    </div>
+                </div>
+
+                <!-- Info -->
+                <div class="product-info-detail">
+                    <p class="product-category text-silver">iPhones / Apple</p>
+                    <h1 class="product-title">iPhone 15 Pro Max Titanium</h1>
+                    <p class="product-price">Consultar Precio</p>
+
+                    <p class="product-desc">
+                        El iPhone 15 Pro Max presenta un diseño de titanio de calidad aeroespacial, que lo hace fuerte y
+                        liviano. Cuenta con un sistema de cámaras Pro mejorado, el chip A17 Pro para juegos de siguiente
+                        nivel, y un nuevo botón de Acción personalizable.
+                    </p>
+
+                    <div class="spec-list">
+                        <div class="spec-item"><span class="spec-label">Pantalla</span><span>6.7" Super Retina
+                                XDR</span></div>
+                        <div class="spec-item"><span class="spec-label">Procesador</span><span>Chip A17 Pro</span></div>
+                        <div class="spec-item"><span class="spec-label">Cámara Principal</span><span>48MP Resolucion
+                                ultra alta</span></div>
+                        <div class="spec-item"><span class="spec-label">Conector</span><span>USB-C Super
+                                velocidad</span></div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn btn-primary"><i data-lucide="shopping-cart" style="margin-right: 8px;"></i>
+                            Añadir al carrito</button>
+                        <a href="https://wa.me/595983677778?text=Hola,%20quisiera%20consultar%20el%20precio%20del%20iPhone%2015%20Pro%20Max"
+                            target="_blank" class="btn btn-whatsapp"><i data-lucide="message-circle"
+                                style="margin-right: 8px;"></i> Consultar WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Overlay & Scripts -->
+    <a href="https://wa.me/595983677778" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-sidebar" id="cartSidebar">
+            <div class="cart-header">
+                <h3>Tu Carrito</h3>
+                <button class="close-cart-btn" id="closeCartBtn"><i data-lucide="x"></i></button>
+            </div>
+            <div class="cart-items">
+                <div class="empty-cart-msg">Tu carrito está vacío.</div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total"><span>Total:</span><span>Consultar</span></div>
+                <button class="btn btn-primary w-full">Ir a pagar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Light (Minimal) -->
+    <footer class="footer">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 ICON Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

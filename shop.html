@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda | ICON Store</title>
+    <meta name="description"
+        content="Catálogo completo de ICON Store. iPhones, accesorios, cases y gadgets premium en Ciudad del Este.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Navigation (Same as index.html) -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="LOGO.jpg" alt="ICON Store Logo">
+                <span class="sr-only">ICON Store</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="shop.html" class="active">Tienda</a></li>
+                <li><a href="offers.html">Ofertas</a></li>
+                <li><a href="shipping.html">Envíos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://wa.me/595983677778" target="_blank" class="icon-btn" aria-label="WhatsApp"><i
+                        data-lucide="message-circle"></i></a>
+                <button class="icon-btn search-btn" aria-label="Search"><i data-lucide="search"></i></button>
+                <div class="cart-container">
+                    <button class="icon-btn cart-btn" aria-label="Cart" id="cartToggle">
+                        <i data-lucide="shopping-bag"></i><span class="cart-badge">0</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Menu" id="mobileMenuBtn">
+                    <div class="hamburger"><span></span><span></span><span></span></div>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-links">
+            <a href="index.html">Inicio</a>
+            <a href="shop.html" class="active">Tienda</a>
+            <a href="offers.html">Ofertas</a>
+            <a href="shipping.html">Envíos</a>
+            <a href="contact.html">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Catálogo <span class="text-silver">Premium</span></h1>
+            <p class="page-desc">Explora nuestra colección completa de tecnología de vanguardia.</p>
+        </div>
+    </header>
+
+    <!-- Shop Content -->
+    <section class="section">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Sidebar -->
+                <aside class="shop-sidebar">
+                    <div class="filter-group">
+                        <h3 class="filter-title">Categorías</h3>
+                        <div class="filter-list">
+                            <label><input type="checkbox" checked> Todos</label>
+                            <label><input type="checkbox"> iPhones</label>
+                            <label><input type="checkbox"> Accesorios</label>
+                            <label><input type="checkbox"> Cases</label>
+                            <label><input type="checkbox"> Gadgets</label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h3 class="filter-title">Precio</h3>
+                        <div class="filter-list">
+                            <label><input type="radio" name="price" checked> Todos</label>
+                            <label><input type="radio" name="price"> Menos de $100</label>
+                            <label><input type="radio" name="price"> $100 - $500</label>
+                            <label><input type="radio" name="price"> $500 - $1000</label>
+                            <label><input type="radio" name="price"> Más de $1000</label>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="product-grid">
+                    <!-- Products -->
+                    <div class="product-card group">
+                        <div class="product-image-wrapper">
+                            <img src="catalogo/Screenshot 2026-03-07 193046.png" alt="iPhone 15 Pro"
+                                class="product-image">
+                            <div class="product-actions-hover">
+                                <button class="btn-icon add-to-cart-btn"><i data-lucide="shopping-bag"></i></button>
+                                <a href="product.html" class="btn-icon quick-view-btn"><i data-lucide="eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">iPhones</span>
+                            <h3 class="product-title"><a href="product.html">iPhone 15 Pro Max Titanium</a></h3>
+                            <div class="product-price">Consultar</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card group">
+                        <div class="product-image-wrapper">
+                            <img src="catalogo/Screenshot 2026-03-07 193051.png" alt="AirPods Pro"
+                                class="product-image">
+                            <div class="product-actions-hover">
+                                <button class="btn-icon add-to-cart-btn"><i data-lucide="shopping-bag"></i></button>
+                                <a href="product.html" class="btn-icon quick-view-btn"><i data-lucide="eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Accesorios</span>
+                            <h3 class="product-title"><a href="product.html">AirPods Pro (2da Gen)</a></h3>
+                            <div class="product-price">Consultar</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card group">
+                        <div class="product-image-wrapper">
+                            <img src="catalogo/Screenshot 2026-03-07 193058.png" alt="Apple Watch"
+                                class="product-image">
+                            <div class="product-actions-hover">
+                                <button class="btn-icon add-to-cart-btn"><i data-lucide="shopping-bag"></i></button>
+                                <a href="product.html" class="btn-icon quick-view-btn"><i data-lucide="eye"></i></a>
+                            </div>
+                            <span class="product-badge badge-new">Nuevo</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Gadgets</span>
+                            <h3 class="product-title"><a href="product.html">Apple Watch Series 9</a></h3>
+                            <div class="product-price">Consultar</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card group">
+                        <div class="product-image-wrapper">
+                            <img src="catalogo/Screenshot 2026-03-07 193111.png" alt="MagSafe Case"
+                                class="product-image">
+                            <div class="product-actions-hover">
+                                <button class="btn-icon add-to-cart-btn"><i data-lucide="shopping-bag"></i></button>
+                                <a href="product.html" class="btn-icon quick-view-btn"><i data-lucide="eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Cases</span>
+                            <h3 class="product-title"><a href="product.html">Funda MagSafe Clear Case</a></h3>
+                            <div class="product-price">Consultar</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card group">
+                        <div class="product-image-wrapper">
+                            <img src="catalogo/Screenshot 2026-03-07 193104.png" alt="Watch Ultra"
+                                class="product-image">
+                            <div class="product-actions-hover">
+                                <button class="btn-icon add-to-cart-btn"><i data-lucide="shopping-bag"></i></button>
+                                <a href="product.html" class="btn-icon quick-view-btn"><i data-lucide="eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Gadgets</span>
+                            <h3 class="product-title"><a href="product.html">Apple Watch Ultra 2</a></h3>
+                            <div class="product-price">Consultar</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card group">
+                        <div class="product-image-wrapper">
+                            <img src="catalogo/Screenshot 2026-03-07 193117.png" alt="Accesorios varios"
+                                class="product-image">
+                            <div class="product-actions-hover">
+                                <button class="btn-icon add-to-cart-btn"><i data-lucide="shopping-bag"></i></button>
+                                <a href="product.html" class="btn-icon quick-view-btn"><i data-lucide="eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Cases</span>
+                            <h3 class="product-title"><a href="product.html">Silicone Case Original</a></h3>
+                            <div class="product-price">Consultar</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Overlay & Scripts -->
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/595983677778" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-sidebar" id="cartSidebar">
+            <div class="cart-header">
+                <h3>Tu Carrito</h3>
+                <button class="close-cart-btn" id="closeCartBtn"><i data-lucide="x"></i></button>
+            </div>
+            <div class="cart-items">
+                <div class="empty-cart-msg">Tu carrito está vacío.</div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total"><span>Total:</span><span>Consultar</span></div>
+                <button class="btn btn-primary w-full">Ir a pagar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Light (Minimal) -->
+    <footer class="footer">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 ICON Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
